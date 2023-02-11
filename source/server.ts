@@ -4,6 +4,10 @@ import express, { Express } from 'express';
 import morgan from 'morgan';
 import routes from './routes/posts';
 
+//swagger
+const swaggerUi = require('swagger-ui-express');
+import { swaggerDocument } from './swagger';
+
 const router: Express = express();
 
 /** Logging */
